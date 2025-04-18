@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3D3B30;
+    color: #FCEFEF;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    width: 90%;
+}
+
+.headline {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.underheadline {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+#search {
+    width: 80%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #1E1E20;
+    border: 2px solid #0E010F;
+    border-radius: 30px;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search:focus {
+    border-color: #FF4365;
+    box-shadow: 0 0 15px rgba(74, 144, 226, 0.3);
+}
+
+#search::placeholder {
+    color: #555;
+}
+
+/* Optional: Add some subtle animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.headline {
+    animation: glow 2s ease-in-out infinite alternate;
+}
